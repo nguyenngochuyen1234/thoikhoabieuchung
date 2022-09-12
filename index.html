@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Lora:ital@1&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>TKB chung</title>
+</head>
+<body>
+    <div id="preloader"></div>
+    <div class="listContainer" id="listContainer">
+        <div class="list">
+            <p>danh sách gồm ca học có thành viên lớn hơn 3 người</p>
+            <ul id="listLi"></ul>
+        </div>
+        <button id="btnClose">X</button>
+    </div>
+    
+    <div class="form">
+        <form method="post" action="" id="myform">
+            <label for="name">Nhập tên:</label>
+            <input type="text" id="name" placeholder="huyen">
+            <div class="note">*Ví dụ: lịch trống là thứ 2(ca 1, ca 2), thứ 3(ca 3, ca 4) thì nhập theo thứ tự
+                <br>Thứ:  2;3
+                <br>Ca:  1-2;3-4
+                <br>*Lưu ý: Nhập đúng ngăn cách theo dấu ";" hoặc "-"
+            </div>
+            <label for="name">Nhập thứ:</label>
+            <input type="text" id="day" placeholder="2;3">
+            <label for="name">Nhập ca học:</label>
+            <input type="text" id="hour" placeholder="1-2;3-4">
+            <input type="submit" value="Submit" id="btn-Submit">
+        </form>
+        <form id="formDeleteName">
+            <label for="deleteName">Nhập tên cần xóa:</label><br>
+            <input type="text" id="deleteName"><br>
+            <button id="btnDelete">Xoá</button>
+        </form>
+        <br>
+        <button id="btnRenderList">Xuất danh sách</button><br>
+        <label for="accept" id="labelAccept">
+            <input type="checkbox" id="accept" name="accept" checked> Hiện tên
+        </label>
+    
+    </div>
+    <div class="table">
+        <table>
+        <tr>
+                <th>Ca</th>
+                <th>Thứ 2</th>
+                <th>Thứ 3</th>
+                <th>Thứ 4</th>
+                <th>Thứ 5</th>
+                <th>Thứ 6</th>
+                <th>Thứ 7</th>
+        </tr>
+            <tr id = "ca">
+                <td>1</td>
+            </tr>
+            <tr  id = "ca">
+                <td>2</td>
+            </tr>
+            <tr  id = "ca">
+                <td>3</td>
+            </tr>
+            <tr  id = "ca">
+                <td>4</td>
+            </tr>
+            <tr  id = "ca">
+                <td>5</td>
+            </tr>
+            <tr  id = "ca">
+                <td>6</td>
+            </tr>
+            <tr  id = "ca">
+                <td>7</td>
+            </tr>
+            <tr  id = "ca">
+                <td>8</td>
+            </tr>
+            <tr  id = "ca">
+                <td>9</td>
+            </tr>
+            <tr  id = "ca">
+                <td>10</td>
+            </tr>
+        </table>
+        
+    </div>
+</body>
+</html>
